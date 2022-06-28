@@ -97,8 +97,7 @@ public class Model {
 		}
 		
 		//scorro i vicini dell'ultimo inserito e provo le varie "strade"
-		for(String v : Graphs.neighborListOf(this.grafo, 
-				parziale.get(parziale.size()-1))) {
+		for(String v : Graphs.neighborListOf(this.grafo, parziale.get(parziale.size()-1))) {
 			if(!parziale.contains(v)) {
 				parziale.add(v);
 				cerca(parziale,destinazione);
